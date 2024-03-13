@@ -170,4 +170,4 @@ jobs:
 
           Пользователь ${{ github.actor }} сделал push с сообщением: "${{ github.event.commits[0].message }}".
 
-          Подробности можно посмотреть в коммите: [ссылка](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
+          Подробности можно посмотреть в коммите:(https://github.com/${{ github.repository }}/commit/${{ github.sha }})
