@@ -165,4 +165,9 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: Деплой успешно выполнен!
+        message: |
+          Деплой успешно выполнен!
+
+          Пользователь ${{ github.actor }} сделал push с сообщением: "${{ github.event.commits[0].message }}".
+
+          Подробности можно посмотреть в коммите: [ссылка](https://github.com/${{ github.repository }}/commit/${{ github.sha }})
